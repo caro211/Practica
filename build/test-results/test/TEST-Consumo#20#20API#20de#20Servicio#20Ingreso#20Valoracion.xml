@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Consumo  API de Servicio Ingreso Valoracion" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-09-20T16:04:01" hostname="MacBook-Pro-ML-149804.local" time="28.181">
+  <properties/>
+  <testcase name="Mensajes exitoso del servicio ingreso valoracion actividad fisica" classname="Consumo  API de Servicio Ingreso Valoracion" time="7.402"/>
+  <testcase name="Mensajes exitoso del servicio ingreso valoracion alimentacion" classname="Consumo  API de Servicio Ingreso Valoracion" time="7.002"/>
+  <testcase name="Mensajes exitoso del servicio ingreso valoracion salud mental" classname="Consumo  API de Servicio Ingreso Valoracion" time="6.195"/>
+  <testcase name="Mensajes exitoso del servicio ingreso valoracion inicial" classname="Consumo  API de Servicio Ingreso Valoracion" time="2.713"/>
+  <testcase name="Mensajes fallido del servicio ingreso valoracion" classname="Consumo  API de Servicio Ingreso Valoracion" time="4.869"/>
+  <system-out><![CDATA[
+@IngresoValoracionActividadFisica
+Escenario: Mensajes exitoso del servicio ingreso valoracion actividad fisica                  ?[90m# src/test/resources/features/ServicioIngresoValoracion.feature:8?[0m
+Request method:	POST
+Request URI:	https://corebienestar.labsura.com/api/assessment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic SU1QTElORUE6SU1QTElORUE=
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "codigoHabito": "HAB-ACT_FISIC",
+    "codigoValoracion": "VAL-ACT_FISIC",
+    "fechaRegistro": "2023-09-07T10:15:30",
+    "estado": "ESTADOREG_FINA",
+    "cliente": {
+        "dniCliente": "C1069757224",
+        "primerNombre": "Claudia",
+        "segundoNombre": "Carolina",
+        "primerApellido": "Sabogal",
+        "segundoApellido": "Parra",
+        "fechaNacimiento": "1988-08-11T22:22:17",
+        "genero": "M",
+        "email": "PRUEBA@GMAIL.COM",
+        "telefonoFijo": " ",
+        "telefonoMovil": "3132967070"
+    },
+    "valoracion": [
+        {
+            "codigoPregunta": "PRG-ACT_FISIC_FREC",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_FREC_NOACT",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ACT_FISIC_MIN",
+            "formatoRespuesta": "FRMTOR_CNUM",
+            "valorRespuesta": 80,
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ACT_FISIC_MESES",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_MESES_UNMES",
+            "valorRespuestaExtra": "otra"
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Content-Length: 124
+Content-Type: application/json
+Date: Wed, 20 Sep 2023 16:04:08 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer
+
+{
+    "id": "2023-09-20T11:04:08.877967404",
+    "status": 201,
+    "message": "Guardado de valoración - exitoso",
+    "errors": [
+        
+    ],
+    "results": null
+}
+  ?[32mCuando ?[0m?[32mel usuario envía una petición al servicio de ingreso valoracion con actividad fisica?[0m ?[90m# stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioEnvíaUnaPeticiónAlServicioDeIngresoValoracionConActividadFisica()?[0m
+Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
+HTTP/1.1 201 Created
+Content-Length: 124
+Content-Type: application/json
+Date: Wed, 20 Sep 2023 16:04:08 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer
+
+{
+    "id": "2023-09-20T11:04:08.877967404",
+    "status": 201,
+    "message": "Guardado de valoración - exitoso",
+    "errors": [
+        
+    ],
+    "results": null
+}
+  ?[32mEntonces ?[0m?[32mel usuario deberá ver respuesta exitosa del registro al ingresar la valoracion?[0m     ?[90m# stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaExitosaDelRegistroAlIngresarLaValoracion(io.cucumber.datatable.DataTable)?[0m
+
+@IngresoValoracionAlimentacion
+Escenario: Mensajes exitoso del servicio ingreso valoracion alimentacion                               ?[90m# src/test/resources/features/ServicioIngresoValoracion.feature:15?[0m
+Request method:	POST
+Request URI:	https://corebienestar.labsura.com/api/assessment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic SU1QTElORUE6SU1QTElORUE=
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "codigoHabito": "HAB-ALIMENTA",
+    "codigoValoracion": "VAL-ALIMENTA",
+    "fechaRegistro": "2023-08-12T10:15:30",
+    "estado": "ESTADOREG_FINA",
+    "cliente": {
+        "dniCliente": "C1069757224",
+        "primerNombre": "Claudia",
+        "segundoNombre": "cAROLINA",
+        "primerApellido": "Sabogal",
+        "segundoApellido": "Parra",
+        "fechaNacimiento": "1985-08-11T22:22:17",
+        "genero": "M",
+        "email": "PRUEBA@GMAIL.COM",
+        "telefonoFijo": "",
+        "telefonoMovil": "3132967070",
+        "empresa": {
+            "nitEmpresa": "800890142-1",
+            "nombreEmpresa": "PLASTICOS LA COLINA",
+            "telefonoEmpresa": "6042512125"
+        },
+        "vinculaciones": [
+            "123456 - POLIZA VIDA",
+            "84156 - Poliza Salud"
+        ],
+        "codigoPlan": "1"
+    },
+    "valoracion": [
+        {
+            "codigoPregunta": "PRG-ALIMENTA_VERDU",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_VERDU_DIAR",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ALIMENTA_FRUTA",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_FRUTA_2A3S",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ALIMENTA_FRTOS",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_FRTOS_NOCSM",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ALIMENTA_GSALU",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST__GSALU_DIAR",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ALIMENTA_PROTE",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST__PROTE_DIAR",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ALIMENTA_GRANO",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST__GRANO_DIAR",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ALIMENTA_DULCE",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_DULCE_NOCSM",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ALIMENTA_AGUA",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_AGUA_NOCSM",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ALIMENTA_PLANI",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_PLANI_CASISIEM",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG-ALIMENTA_EMOCI",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_EMOCI_RARA",
+            "valorRespuestaExtra": null
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Content-Length: 124
+Content-Type: application/json
+Date: Wed, 20 Sep 2023 16:04:15 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer
+
+{
+    "id": "2023-09-20T11:04:16.156749546",
+    "status": 201,
+    "message": "Guardado de valoración - exitoso",
+    "errors": [
+        
+    ],
+    "results": null
+}
+  ?[32mCuando ?[0m?[32mel usuario envía una petición al servicio de ingreso valoracion con alimentacion?[0m              ?[90m# stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioEnvíaUnaPeticiónAlServicioDeIngresoValoracionConAlimentacion()?[0m
+HTTP/1.1 201 Created
+Content-Length: 124
+Content-Type: application/json
+Date: Wed, 20 Sep 2023 16:04:15 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer
+
+{
+    "id": "2023-09-20T11:04:16.156749546",
+    "status": 201,
+    "message": "Guardado de valoración - exitoso",
+    "errors": [
+        
+    ],
+    "results": null
+}
+  ?[32mEntonces ?[0m?[32mel usuario deberá ver respuesta exitosa del registro al ingresar la valoracion alimentacion?[0m ?[90m# stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaExitosaDelRegistroAlIngresarLaValoracionAlimentacion()?[0m
+
+@IngresoValoracionSaludMental
+Escenario: Mensajes exitoso del servicio ingreso valoracion salud mental                  ?[90m# src/test/resources/features/ServicioIngresoValoracion.feature:21?[0m
+Request method:	POST
+Request URI:	https://corebienestar.labsura.com/api/assessment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic SU1QTElORUE6SU1QTElORUE=
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "codigoHabito": "HAB-SMENTAL",
+    "codigoValoracion": "VAL-SMENTAL",
+    "fechaRegistro": "2023-09-05T10:15:30",
+    "estado": "ESTADOREG_FINA",
+    "cliente": {
+        "dniCliente": "C1069757224",
+        "primerNombre": "Claudia",
+        "segundoNombre": "Carolina",
+        "primerApellido": "Sabogal",
+        "segundoApellido": "Pineda",
+        "fechaNacimiento": "1988-08-11T22:22:17",
+        "genero": "M",
+        "email": "PRUEBA@GMAIL.COM",
+        "telefonoFijo": " ",
+        "telefonoMovil": "3132967078",
+        "direccion": {
+            "codigoPais": "CO",
+            "codigoMunicipio": "SAB",
+            "codigoDepartamento": "ANT",
+            "nomenclatura": "Call1 16 No. 40 - 20",
+            "complementario": "Int. 205, Barrio La esperanza (Sabaneta)"
+        },
+        "empresa": {
+            "nitEmpresa": "800890142-1",
+            "nombreEmpresa": "PLASTICOS LA COLINA",
+            "telefonoEmpresa": "6042512125"
+        },
+        "vinculaciones": [
+            "123456 - POLIZA VIDA",
+            "84156 - Poliza Salud"
+        ],
+        "codigoPlan": "9"
+    },
+    "valoracion": [
+        {
+            "codigoPregunta": "PRG_SMENTAL_IMPUL",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_SIEMPRE",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_INSEG",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_SIEMPRE",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_PENSA",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_SIEMPRE",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_DORMIR",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_NUNCA",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_PROBLE",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_SIEMPRE",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_FATIG",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_SIEMPRE",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_PESAD",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_SIEMPRE",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_MUSC",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_SIEMPRE",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_ANSIAS",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_SIEMPRE",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_IRRI",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_POCAS_VECES",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_ENERG",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_FRECUENTEMENTE",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_SMENTAL_TMP",
+            "formatoRespuesta": "FRMTOR_CSELU",
+            "valorRespuesta": "RPST_FRECUENTEMENTE",
+            "valorRespuestaExtra": null
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Content-Length: 124
+Content-Type: application/json
+Date: Wed, 20 Sep 2023 16:04:21 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer
+
+{
+    "id": "2023-09-20T11:04:22.122092679",
+    "status": 201,
+    "message": "Guardado de valoración - exitoso",
+    "errors": [
+        
+    ],
+    "results": null
+}
+  ?[32mCuando ?[0m?[32mel usuario envía una petición al servicio de ingreso valoracion salud mental?[0m     ?[90m# stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioEnvíaUnaPeticiónAlServicioDeIngresoValoracionSaludMental()?[0m
+Step argument class io.cucumber.core.gherkin.messages.GherkinMessagesDataTableArgument
+HTTP/1.1 201 Created
+Content-Length: 124
+Content-Type: application/json
+Date: Wed, 20 Sep 2023 16:04:08 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer
+
+{
+    "id": "2023-09-20T11:04:08.877967404",
+    "status": 201,
+    "message": "Guardado de valoración - exitoso",
+    "errors": [
+        
+    ],
+    "results": null
+}
+  ?[32mEntonces ?[0m?[32mel usuario deberá ver respuesta exitosa del registro al ingresar la valoracion?[0m ?[90m# stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaExitosaDelRegistroAlIngresarLaValoracion(io.cucumber.datatable.DataTable)?[0m
+
+@IngresoValoracionInicial
+Escenario: Mensajes exitoso del servicio ingreso valoracion inicial                               ?[90m# src/test/resources/features/ServicioIngresoValoracion.feature:28?[0m
+Request method:	POST
+Request URI:	https://corebienestar.labsura.com/api/assessment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic SU1QTElORUE6SU1QTElORUE=
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "codigoHabito": "",
+    "codigoValoracion": "VAL-INICIAL",
+    "fechaRegistro": "2023-08-12T10:15:30",
+    "estado": "ESTADOREG_FINA",
+    "cliente": {
+        "dniCliente": "T1038790",
+        "primerNombre": "Pedro",
+        "segundoNombre": "Leon",
+        "primerApellido": "Jaramillo",
+        "segundoApellido": "Pineda",
+        "fechaNacimiento": "1988-08-11T22:22:17",
+        "genero": "M",
+        "email": "PRUEBA@GMAIL.COM",
+        "telefonoFijo": "",
+        "telefonoMovil": "3132967070",
+        "direccion": {
+            "codigoPais": "CO",
+            "codigoMunicipio": "SAB",
+            "codigoDepartamento": "ANT",
+            "nomenclatura": "Call1 16 No. 40 - 20",
+            "complementario": "Int. 205, Barrio La esperanza (Sabaneta)"
+        },
+        "empresa": {
+            "nitEmpresa": "800890142-1",
+            "nombreEmpresa": "PLASTICOS LA COLINA",
+            "telefonoEmpresa": "6042512125"
+        },
+        "vinculaciones": [
+            "123456 - POLIZA VIDA",
+            "84156 - Poliza Salud"
+        ],
+        "codigoPlan": "9"
+    },
+    "valoracion": [
+        {
+            "codigoPregunta": "PRG_INI_TALLA",
+            "formatoRespuesta": "FRMTOR_CNUM",
+            "valorRespuesta": 174,
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_INI_PESO",
+            "formatoRespuesta": "FRMTOR_CNUM",
+            "valorRespuesta": 86,
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_INI_ENFERMEDAD",
+            "formatoRespuesta": "FRMTOR_CSELM",
+            "valorRespuesta": "RPST_ENF_NINGUNA",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_INI_ENFERMEDAD",
+            "formatoRespuesta": "FRMTOR_CSELM",
+            "valorRespuesta": "RPST_ENF_OTRA_TXTEXTRA",
+            "valorRespuestaExtra": "Renitis"
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Content-Length: 124
+Content-Type: application/json
+Date: Wed, 20 Sep 2023 16:04:24 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer
+
+{
+    "id": "2023-09-20T11:04:25.118605224",
+    "status": 201,
+    "message": "Guardado de valoración - exitoso",
+    "errors": [
+        
+    ],
+    "results": null
+}
+  ?[32mCuando ?[0m?[32mel usuario envía una petición al servicio de ingreso valoracion inicial?[0m                  ?[90m# stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioEnvíaUnaPeticiónAlServicioDeIngresoValoracionInicial()?[0m
+HTTP/1.1 201 Created
+Content-Length: 124
+Content-Type: application/json
+Date: Wed, 20 Sep 2023 16:04:24 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer
+
+{
+    "id": "2023-09-20T11:04:25.118605224",
+    "status": 201,
+    "message": "Guardado de valoración - exitoso",
+    "errors": [
+        
+    ],
+    "results": null
+}
+  ?[32mEntonces ?[0m?[32mel usuario deberá ver respuesta exitosa del registro al ingresar la valoracion inicial?[0m ?[90m# stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaExitosaDelRegistroAlIngresarLaValoracionInicial()?[0m
+
+@EstadoValoracionIncorrecto
+Escenario: Mensajes fallido del servicio ingreso valoracion                                ?[90m# src/test/resources/features/ServicioIngresoValoracion.feature:33?[0m
+Request method:	POST
+Request URI:	https://corebienestar.labsura.com/api/assessment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic SU1QTElORUE6SU1QTElORUE=
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "codigoHabito": "",
+    "codigoValoracion": "VAL-INICIAL",
+    "fechaRegistro": "2023-08-12T10:15:30",
+    "estado": "ESTADOREG_F",
+    "cliente": {
+        "dniCliente": "T1038790",
+        "primerNombre": "Pedro",
+        "segundoNombre": "Leon",
+        "primerApellido": "Jaramillo",
+        "segundoApellido": "Pineda",
+        "fechaNacimiento": "1988-08-11T22:22:17",
+        "genero": "M",
+        "email": "PRUEBA@GMAIL.COM",
+        "telefonoFijo": "",
+        "telefonoMovil": "3132967070"
+    },
+    "valoracion": [
+        {
+            "codigoPregunta": "PRG_INI_TALLA",
+            "formatoRespuesta": "FRMTOR_CNUM",
+            "valorRespuesta": 174,
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_INI_PESO",
+            "formatoRespuesta": "FRMTOR_CNUM",
+            "valorRespuesta": 86,
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_INI_ENFERMEDAD",
+            "formatoRespuesta": "FRMTOR_CSELM",
+            "valorRespuesta": "RPST_ENF_NINGUNA",
+            "valorRespuestaExtra": null
+        },
+        {
+            "codigoPregunta": "PRG_INI_ENFERMEDAD",
+            "formatoRespuesta": "FRMTOR_CSELM",
+            "valorRespuesta": "RPST_ENF_OTRA_TXTEXTRA",
+            "valorRespuestaExtra": "Renitis"
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+Content-Length: 222
+Content-Type: application/json
+Date: Wed, 20 Sep 2023 16:04:29 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer
+
+{
+    "id": "2023-09-20T11:04:29.976116173",
+    "status": 400,
+    "message": "Operación fallida - parámetros incorrectos",
+    "errors": [
+        {
+            "code": "ValueOfEnum",
+            "message": "El estado debe ser ESTADOREG_INCOMP o ESTADOREG_FINA"
+        }
+    ],
+    "results": null
+}
+  ?[32mCuando ?[0m?[32mel usuario envía una petición al servicio de ingreso valoracion con estado errado?[0m ?[90m# stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioEnvíaUnaPeticiónAlServicioDeIngresoValoracionConEstadoErrado()?[0m
+HTTP/1.1 400 Bad Request
+Content-Length: 222
+Content-Type: application/json
+Date: Wed, 20 Sep 2023 16:04:29 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer
+
+{
+    "id": "2023-09-20T11:04:29.976116173",
+    "status": 400,
+    "message": "Operación fallida - parámetros incorrectos",
+    "errors": [
+        {
+            "code": "ValueOfEnum",
+            "message": "El estado debe ser ESTADOREG_INCOMP o ESTADOREG_FINA"
+        }
+    ],
+    "results": null
+}
+  ?[32mEntonces ?[0m?[32mel usuario deberá ver respuesta errada del registro?[0m                             ?[90m# stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaErradaDelRegistro()?[0m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///Users/usuario/Documents/Qiip-automatizacion/Auto_Servicios_Sura_V2/src/test/resources/features/ServicioIngresoValoracion.feature
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Mensajes exitoso del servicio ingreso valoracion actividad fisica(consumo--api-de-servicio-ingreso-valoracion;mensajes-exitoso-del-servicio-ingreso-valoracion-actividad-fisica)
+-------------------------------------------------------------------
+sep. 20, 2023 11:04:09 A.M. Tasks.ServicioIngresoValoracion.RespuestaExitosaIngreso performAs
+WARNING: Error al conectar con la base de datos Postgresql
+java.sql.SQLException: Error al conectar con la base de datos Postgresql
+	at utils.BasedeDatos.BaseDatosConexion.conectarCon(BaseDatosConexion.java:40)
+	at utils.BasedeDatos.BaseDatosConexion.consultar(BaseDatosConexion.java:76)
+	at Tasks.ServicioIngresoValoracion.RespuestaExitosaIngreso.performAs(RespuestaExitosaIngreso.java:39)
+	at Tasks.ServicioIngresoValoracion.RespuestaExitosaIngreso$ByteBuddy$gT9ZoLt6.performAs$accessor$cFCokFyY(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at Tasks.ServicioIngresoValoracion.RespuestaExitosaIngreso$ByteBuddy$gT9ZoLt6.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:253)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:234)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:180)
+	at stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaExitosaDelRegistroAlIngresarLaValoracion(ServicioIngresoValoracionStepDefinition.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:262)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.postgresql.util.PSQLException: El intento de conexión falló.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:296)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+	at org.postgresql.Driver.makeConnection(Driver.java:459)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at utils.BasedeDatos.BaseDatosConexion.conectarCon(BaseDatosConexion.java:38)
+	... 85 more
+Caused by: java.net.UnknownHostException: psql-segcorebienestal-eus-3e23.postgres.database.azure.com
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:81)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:92)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:196)
+	... 92 more
+
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Mensajes exitoso del servicio ingreso valoracion actividad fisica
+----------------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///Users/usuario/Documents/Qiip-automatizacion/Auto_Servicios_Sura_V2/src/test/resources/features/ServicioIngresoValoracion.feature
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Mensajes exitoso del servicio ingreso valoracion alimentacion(consumo--api-de-servicio-ingreso-valoracion;mensajes-exitoso-del-servicio-ingreso-valoracion-alimentacion)
+-------------------------------------------------------------------
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Mensajes exitoso del servicio ingreso valoracion alimentacion
+----------------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///Users/usuario/Documents/Qiip-automatizacion/Auto_Servicios_Sura_V2/src/test/resources/features/ServicioIngresoValoracion.feature
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Mensajes exitoso del servicio ingreso valoracion salud mental(consumo--api-de-servicio-ingreso-valoracion;mensajes-exitoso-del-servicio-ingreso-valoracion-salud-mental)
+-------------------------------------------------------------------
+sep. 20, 2023 11:04:22 A.M. Tasks.ServicioIngresoValoracion.RespuestaExitosaIngreso performAs
+WARNING: Error al conectar con la base de datos Postgresql
+java.sql.SQLException: Error al conectar con la base de datos Postgresql
+	at utils.BasedeDatos.BaseDatosConexion.conectarCon(BaseDatosConexion.java:40)
+	at utils.BasedeDatos.BaseDatosConexion.consultar(BaseDatosConexion.java:76)
+	at Tasks.ServicioIngresoValoracion.RespuestaExitosaIngreso.performAs(RespuestaExitosaIngreso.java:39)
+	at Tasks.ServicioIngresoValoracion.RespuestaExitosaIngreso$ByteBuddy$gT9ZoLt6.performAs$accessor$cFCokFyY(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at Tasks.ServicioIngresoValoracion.RespuestaExitosaIngreso$ByteBuddy$gT9ZoLt6.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:253)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:234)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:180)
+	at stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaExitosaDelRegistroAlIngresarLaValoracion(ServicioIngresoValoracionStepDefinition.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:262)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.postgresql.util.PSQLException: El intento de conexión falló.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:296)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+	at org.postgresql.Driver.makeConnection(Driver.java:459)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at utils.BasedeDatos.BaseDatosConexion.conectarCon(BaseDatosConexion.java:38)
+	... 85 more
+Caused by: java.net.UnknownHostException: psql-segcorebienestal-eus-3e23.postgres.database.azure.com
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:81)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:92)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:196)
+	... 92 more
+
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Mensajes exitoso del servicio ingreso valoracion salud mental
+----------------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///Users/usuario/Documents/Qiip-automatizacion/Auto_Servicios_Sura_V2/src/test/resources/features/ServicioIngresoValoracion.feature
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Mensajes exitoso del servicio ingreso valoracion inicial(consumo--api-de-servicio-ingreso-valoracion;mensajes-exitoso-del-servicio-ingreso-valoracion-inicial)
+-------------------------------------------------------------------
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Mensajes exitoso del servicio ingreso valoracion inicial
+----------------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///Users/usuario/Documents/Qiip-automatizacion/Auto_Servicios_Sura_V2/src/test/resources/features/ServicioIngresoValoracion.feature
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Mensajes fallido del servicio ingreso valoracion(consumo--api-de-servicio-ingreso-valoracion;mensajes-fallido-del-servicio-ingreso-valoracion)
+-------------------------------------------------------------------
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Mensajes fallido del servicio ingreso valoracion
+----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>

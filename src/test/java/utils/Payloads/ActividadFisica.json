@@ -1,0 +1,38 @@
+{
+  "codigoHabito": "HAB-ACT_FISIC",
+  "codigoValoracion": "VAL-ACT_FISIC",
+  "fechaRegistro": "2023-09-07T10:15:30",
+  "estado": "ESTADOREG_FINA",
+  "cliente": {
+    "dniCliente": "C1069757224",
+    "primerNombre": "Claudia",
+    "segundoNombre": "Carolina",
+    "primerApellido": "Sabogal",
+    "segundoApellido": "Parra",
+    "fechaNacimiento": "1988-08-11T22:22:17",
+    "genero": "M",
+    "email": "PRUEBA@GMAIL.COM",
+    "telefonoFijo": " ",
+    "telefonoMovil": "3132967070"
+  },
+  "valoracion": [
+    {
+      "codigoPregunta": "PRG-ACT_FISIC_FREC",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_FREC_NOACT",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG-ACT_FISIC_MIN",
+      "formatoRespuesta": "FRMTOR_CNUM",
+      "valorRespuesta": 80,
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG-ACT_FISIC_MESES",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_MESES_UNMES",
+      "valorRespuestaExtra": "otra"
+    }
+  ]
+}

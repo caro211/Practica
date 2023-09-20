@@ -1,0 +1,46 @@
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.3.12")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+group 'org.practice'
+version '1.0'
+
+ext{
+    serenityVersion = '2.3.12'
+}
+
+tasks.withType(JavaCompile){
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation "org.slf4j:slf4j-api:1.7.30"
+    implementation "org.slf4j:slf4j-simple:1.7.30"
+    implementation group: 'io.rest-assured', name: 'json-schema-validator', version: '4.3.3'
+    implementation group: 'com.codoid.products', name: 'fillo', version: '1.18'
+    implementation "net.serenity-bdd:serenity-cucumber6:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-rest-assured:$rootProject.ext.serenityVersion"
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    testImplementation group: 'io.rest-assured', name: 'rest-assured'
+    implementation "org.postgresql:postgresql:42.2.10"
+}

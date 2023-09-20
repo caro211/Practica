@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Consumo  API de Servicio Index Valoracion" skipped="0" tests="2" time="3.98" timestamp="2023-09-19 10:14:36"><testcase name="Mensajes exitoso del servicio index valoracion"/><testcase name="Mensajes fallido al enviar cliente inexistente al  servicio indice valoracion"/></testsuite>

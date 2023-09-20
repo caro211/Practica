@@ -1,0 +1,109 @@
+{
+  "codigoHabito": "HAB-SMENTAL",
+  "codigoValoracion": "VAL-SMENTAL",
+  "fechaRegistro": "2023-09-05T10:15:30",
+  "estado": "ESTADOREG_FINA",
+  "cliente": {
+    "dniCliente": "C1069757224",
+    "primerNombre": "Claudia",
+    "segundoNombre": "Carolina",
+    "primerApellido": "Sabogal",
+    "segundoApellido": "Pineda",
+    "fechaNacimiento": "1988-08-11T22:22:17",
+    "genero": "M",
+    "email": "PRUEBA@GMAIL.COM",
+    "telefonoFijo": " ",
+    "telefonoMovil": "3132967078",
+    "direccion": {
+      "codigoPais": "CO",
+      "codigoMunicipio": "SAB",
+      "codigoDepartamento": "ANT",
+      "nomenclatura": "Call1 16 No. 40 - 20",
+      "complementario": "Int. 205, Barrio La esperanza (Sabaneta)"
+    },
+    "empresa":{
+      "nitEmpresa": "800890142-1",
+      "nombreEmpresa": "PLASTICOS LA COLINA",
+      "telefonoEmpresa": "6042512125"
+    },
+    "vinculaciones": [
+      "123456 - POLIZA VIDA",
+      "84156 - Poliza Salud"
+    ],
+    "codigoPlan": "9"
+  },
+  "valoracion": [
+    {
+      "codigoPregunta": "PRG_SMENTAL_IMPUL",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_SIEMPRE",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_INSEG",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_SIEMPRE",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_PENSA",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_SIEMPRE",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_DORMIR",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_NUNCA",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_PROBLE",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_SIEMPRE",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_FATIG",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_SIEMPRE",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_PESAD",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_SIEMPRE",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_MUSC",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_SIEMPRE",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_ANSIAS",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_SIEMPRE",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_IRRI",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_POCAS_VECES",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_ENERG",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_FRECUENTEMENTE",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_SMENTAL_TMP",
+      "formatoRespuesta": "FRMTOR_CSELU",
+      "valorRespuesta": "RPST_FRECUENTEMENTE",
+      "valorRespuestaExtra": null
+    }
+  ]
+}

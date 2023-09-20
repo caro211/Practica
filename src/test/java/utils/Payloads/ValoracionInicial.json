@@ -1,0 +1,62 @@
+{
+  "codigoHabito": "",
+  "codigoValoracion": "VAL-INICIAL",
+  "fechaRegistro": "2023-08-12T10:15:30",
+  "estado": "ESTADOREG_FINA",
+  "cliente": {
+    "dniCliente": "T1038790",
+    "primerNombre": "Pedro",
+    "segundoNombre": "Leon",
+    "primerApellido": "Jaramillo",
+    "segundoApellido": "Pineda",
+    "fechaNacimiento": "1988-08-11T22:22:17",
+    "genero": "M",
+    "email": "PRUEBA@GMAIL.COM",
+    "telefonoFijo": "",
+    "telefonoMovil": "3132967070",
+    "direccion": {
+      "codigoPais": "CO",
+      "codigoMunicipio": "SAB",
+      "codigoDepartamento": "ANT",
+      "nomenclatura": "Call1 16 No. 40 - 20",
+      "complementario": "Int. 205, Barrio La esperanza (Sabaneta)"
+    },
+    "empresa":{
+      "nitEmpresa": "800890142-1",
+      "nombreEmpresa": "PLASTICOS LA COLINA",
+      "telefonoEmpresa": "6042512125"
+    },
+    "vinculaciones": [
+      "123456 - POLIZA VIDA",
+      "84156 - Poliza Salud"
+    ],
+    "codigoPlan": "9"
+
+  },
+  "valoracion": [
+    {
+      "codigoPregunta": "PRG_INI_TALLA",
+      "formatoRespuesta": "FRMTOR_CNUM",
+      "valorRespuesta": 174,
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_INI_PESO",
+      "formatoRespuesta": "FRMTOR_CNUM",
+      "valorRespuesta": 86,
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_INI_ENFERMEDAD",
+      "formatoRespuesta": "FRMTOR_CSELM",
+      "valorRespuesta": "RPST_ENF_NINGUNA",
+      "valorRespuestaExtra": null
+    },
+    {
+      "codigoPregunta": "PRG_INI_ENFERMEDAD",
+      "formatoRespuesta": "FRMTOR_CSELM",
+      "valorRespuesta": "RPST_ENF_OTRA_TXTEXTRA",
+      "valorRespuestaExtra": "Renitis"
+    }
+  ]
+}
