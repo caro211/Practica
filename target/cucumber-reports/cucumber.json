@@ -1,329 +1,193 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-09-20T16:04:01.970Z",
+        "start_timestamp": "2025-01-16T18:30:35.735Z",
         "before": [
           {
             "result": {
-              "duration": 719372000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Base.seCreaElRequestDeLaPeticionDelServicio()"
-            }
-          },
-          {
-            "result": {
-              "duration": 40113000,
+              "duration": 33973000,
               "status": "passed"
             },
             "match": {
               "location": "stepdefinitions.Base.sePreparaElActor()"
+            }
+          },
+          {
+            "result": {
+              "duration": 323392000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Base.seCreaElRequestDeLaPeticionDelServicio()"
             }
           }
         ],
         "line": 8,
-        "name": "Mensajes exitoso del servicio ingreso valoracion actividad fisica",
+        "name": "Successfully sending a request to create a new pet",
         "description": "",
-        "id": "consumo--api-de-servicio-ingreso-valoracion;mensajes-exitoso-del-servicio-ingreso-valoracion-actividad-fisica",
+        "id": "as-an-administrator;successfully-sending-a-request-to-create-a-new-pet",
         "type": "scenario",
-        "keyword": "Escenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5998184000,
+              "duration": 422218000,
               "status": "passed"
             },
             "line": 9,
-            "name": "el usuario envía una petición al servicio de ingreso valoracion con actividad fisica",
+            "name": "the administrator sends a request to create a new pet",
             "match": {
-              "location": "stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioEnvíaUnaPeticiónAlServicioDeIngresoValoracionConActividadFisica()"
+              "location": "stepdefinitions.PetsStepDefinition.theAdministratorSendsARequestToCreateANewPet()"
             },
-            "keyword": "Cuando "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 273711000,
+              "duration": 55998000,
               "status": "passed"
             },
             "line": 10,
-            "name": "el usuario deberá ver respuesta exitosa del registro al ingresar la valoracion",
+            "name": "the response status code should be success",
             "match": {
-              "location": "stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaExitosaDelRegistroAlIngresarLaValoracion(io.cucumber.datatable.DataTable)"
+              "location": "stepdefinitions.UsersStepDefinition.theResponseStatusCodeShouldBeSuccess()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "dni",
-                  "C1069757224"
-                ]
-              }
-            ],
-            "keyword": "Entonces "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@IngresoValoracionActividadFisica"
+            "name": "@petCreated"
           }
         ]
       },
       {
-        "start_timestamp": "2023-09-20T16:04:09.250Z",
+        "start_timestamp": "2025-01-16T18:30:36.669Z",
         "before": [
           {
             "result": {
-              "duration": 5629000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Base.seCreaElRequestDeLaPeticionDelServicio()"
-            }
-          },
-          {
-            "result": {
-              "duration": 1553000,
+              "duration": 783000,
               "status": "passed"
             },
             "match": {
               "location": "stepdefinitions.Base.sePreparaElActor()"
             }
+          },
+          {
+            "result": {
+              "duration": 795000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Base.seCreaElRequestDeLaPeticionDelServicio()"
+            }
           }
         ],
-        "line": 15,
-        "name": "Mensajes exitoso del servicio ingreso valoracion alimentacion",
+        "line": 14,
+        "name": "Successfully sending a request to modify a  pet",
         "description": "",
-        "id": "consumo--api-de-servicio-ingreso-valoracion;mensajes-exitoso-del-servicio-ingreso-valoracion-alimentacion",
+        "id": "as-an-administrator;successfully-sending-a-request-to-modify-a--pet",
         "type": "scenario",
-        "keyword": "Escenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6931358000,
+              "duration": 27626000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the administrator sends a request to modify pet",
+            "match": {
+              "location": "stepdefinitions.PetsStepDefinition.theAdministratorSendsARequestToModifyPet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2908000,
               "status": "passed"
             },
             "line": 16,
-            "name": "el usuario envía una petición al servicio de ingreso valoracion con alimentacion",
+            "name": "the response status code should be success",
             "match": {
-              "location": "stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioEnvíaUnaPeticiónAlServicioDeIngresoValoracionConAlimentacion()"
+              "location": "stepdefinitions.UsersStepDefinition.theResponseStatusCodeShouldBeSuccess()"
             },
-            "keyword": "Cuando "
-          },
-          {
-            "result": {
-              "duration": 34666000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "el usuario deberá ver respuesta exitosa del registro al ingresar la valoracion alimentacion",
-            "match": {
-              "location": "stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaExitosaDelRegistroAlIngresarLaValoracionAlimentacion()"
-            },
-            "keyword": "Entonces "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@IngresoValoracionAlimentacion"
+            "name": "@petModified"
           }
         ]
       },
       {
-        "start_timestamp": "2023-09-20T16:04:16.261Z",
+        "start_timestamp": "2025-01-16T18:30:36.707Z",
         "before": [
           {
             "result": {
-              "duration": 8766000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Base.seCreaElRequestDeLaPeticionDelServicio()"
-            }
-          },
-          {
-            "result": {
-              "duration": 1705000,
+              "duration": 680000,
               "status": "passed"
             },
             "match": {
               "location": "stepdefinitions.Base.sePreparaElActor()"
             }
-          }
-        ],
-        "line": 21,
-        "name": "Mensajes exitoso del servicio ingreso valoracion salud mental",
-        "description": "",
-        "id": "consumo--api-de-servicio-ingreso-valoracion;mensajes-exitoso-del-servicio-ingreso-valoracion-salud-mental",
-        "type": "scenario",
-        "keyword": "Escenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 5858875000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "el usuario envía una petición al servicio de ingreso valoracion salud mental",
-            "match": {
-              "location": "stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioEnvíaUnaPeticiónAlServicioDeIngresoValoracionSaludMental()"
-            },
-            "keyword": "Cuando "
           },
           {
             "result": {
-              "duration": 285299000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "el usuario deberá ver respuesta exitosa del registro al ingresar la valoracion",
-            "match": {
-              "location": "stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaExitosaDelRegistroAlIngresarLaValoracion(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "dni",
-                  "C1069757224"
-                ]
-              }
-            ],
-            "keyword": "Entonces "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@IngresoValoracionSaludMental"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-09-20T16:04:22.447Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1659000,
+              "duration": 399000,
               "status": "passed"
             },
             "match": {
               "location": "stepdefinitions.Base.seCreaElRequestDeLaPeticionDelServicio()"
             }
-          },
-          {
-            "result": {
-              "duration": 760000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Base.sePreparaElActor()"
-            }
           }
         ],
-        "line": 28,
-        "name": "Mensajes exitoso del servicio ingreso valoracion inicial",
+        "line": 19,
+        "name": "Successfully sending a request to modify a  pet",
         "description": "",
-        "id": "consumo--api-de-servicio-ingreso-valoracion;mensajes-exitoso-del-servicio-ingreso-valoracion-inicial",
+        "id": "as-an-administrator;successfully-sending-a-request-to-modify-a--pet",
         "type": "scenario",
-        "keyword": "Escenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2686953000,
+              "duration": 16698000,
               "status": "passed"
             },
-            "line": 29,
-            "name": "el usuario envía una petición al servicio de ingreso valoracion inicial",
+            "line": 20,
+            "name": "the administrator sends a request to modify pet invalid",
             "match": {
-              "location": "stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioEnvíaUnaPeticiónAlServicioDeIngresoValoracionInicial()"
+              "location": "stepdefinitions.PetsStepDefinition.theAdministratorSendsARequestToModifyPetInvalid()"
             },
-            "keyword": "Cuando "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 9829000,
+              "duration": 1804000,
               "status": "passed"
             },
-            "line": 30,
-            "name": "el usuario deberá ver respuesta exitosa del registro al ingresar la valoracion inicial",
+            "line": 21,
+            "name": "the response status code should be a error",
             "match": {
-              "location": "stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaExitosaDelRegistroAlIngresarLaValoracionInicial()"
+              "location": "stepdefinitions.PetsStepDefinition.theResponseStatusCodeShouldBeAError()"
             },
-            "keyword": "Entonces "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@IngresoValoracionInicial"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-09-20T16:04:25.159Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1562000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Base.seCreaElRequestDeLaPeticionDelServicio()"
-            }
-          },
-          {
-            "result": {
-              "duration": 590000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Base.sePreparaElActor()"
-            }
-          }
-        ],
-        "line": 33,
-        "name": "Mensajes fallido del servicio ingreso valoracion",
-        "description": "",
-        "id": "consumo--api-de-servicio-ingreso-valoracion;mensajes-fallido-del-servicio-ingreso-valoracion",
-        "type": "scenario",
-        "keyword": "Escenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4845080000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "el usuario envía una petición al servicio de ingreso valoracion con estado errado",
-            "match": {
-              "location": "stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioEnvíaUnaPeticiónAlServicioDeIngresoValoracionConEstadoErrado()"
-            },
-            "keyword": "Cuando "
-          },
-          {
-            "result": {
-              "duration": 9881000,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "el usuario deberá ver respuesta errada del registro",
-            "match": {
-              "location": "stepdefinitions.ServicioIngresoValoracionStepDefinition.elUsuarioDeberáVerRespuestaErradaDelRegistro()"
-            },
-            "keyword": "Entonces "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@EstadoValoracionIncorrecto"
+            "name": "@InvalidModification"
           }
         ]
       }
     ],
-    "name": "Consumo  API de Servicio Ingreso Valoracion",
-    "description": "  Como usuario del servicio\n  Quiero ver ingresar la valoracion de actividad fisica",
-    "id": "consumo--api-de-servicio-ingreso-valoracion",
-    "keyword": "Característica",
-    "uri": "file:src/test/resources/features/ServicioIngresoValoracion.feature",
+    "name": "As an administrator",
+    "description": "  I want to be able to create and modify pets\n  So that I can manage the pets of the system",
+    "id": "as-an-administrator",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Pet.feature",
     "tags": []
   }
 ]
