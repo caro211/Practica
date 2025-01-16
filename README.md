@@ -1,1 +1,0 @@
-Gerencia_Tecnologia
